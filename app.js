@@ -10,7 +10,8 @@ Ext.application({
     requires: [
         // This will automatically load all classes in the CrudUI namespace
         // so that application classes do not need to require each other.
-        'CrudUI.*'
+        'CrudUI.*',
+        'Ext.grid.Panel'
     ],
 
     // The name of the initial view to create.

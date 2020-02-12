@@ -6,7 +6,7 @@
 Ext.define('CrudUI.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'CrudUI',
+    name: 'Demo App',
 
     quickTips: false,
     platformConfig: {

@@ -1,17 +1,14 @@
-/**
- * Created by khaines on 7/15/2015.
- */
-Ext.define('Assign.view.census.edit.EditPatientViewModel', {
+Ext.define('CrudUI.view.person.PersonListViewModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.edit-patient-view-model',
+    alias: 'viewmodel.person-list-view-model',
 
     stores: {
-        patientStore: {
-            model: 'Assign.model.Patient',
+        personStore: {
+            model: 'CrudUI.model.Person',
 
             proxy: {
                 type: 'ajax',
-                url: Assign.model.Utils.URL_PREFIX + '/assign/patients/v1',
+                url: 'http://localhost:8080/person/load',
                 actionMethods: {
                     create: 'POST',
                     read: 'GET',

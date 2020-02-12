@@ -1,4 +1,4 @@
-Ext.define('CrudUI.model.Person', {
+Ext.define('CrudUI.model.Personnel', {
     extend: 'CrudUI.model.Base',
 
     fields: [

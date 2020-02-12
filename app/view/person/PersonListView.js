@@ -3,14 +3,23 @@ Ext.define('CrudUI.view.person.PersonListView', {
     xtype: 'personList',
 
     requires: [
-        'CrudUI.store.Person'
+        'Ext.grid.Panel',
+        'CrudUI.view.person.PersonListViewController',
+        'CrudUI.view.person.PersonListViewModel'
     ],
 
     title: 'Person',
 
-    store: {
-        type: 'Person'
+    controller: 'person-list-view-controller',
+
+    viewModel: {
+        type: 'person-list-view-model'
     },
+
+    bind: '{personStore}',
+    // store:{
+    //     type: 'personStore'
+    // },
 
      tbar: [
         {
@@ -18,17 +27,17 @@ Ext.define('CrudUI.view.person.PersonListView', {
             itemId: 'createPersonBtn',
             text: 'Create New Person',
             listeners: {
-                click: 'onClickCreateNewPatient'
+                //click: 'onClickCreateNewPatient'
             }
         }
      ], 
     columns: [
-        { text: 'First Name',  dataIndex: 'name' },
-        { text: 'Last Name', dataIndex: 'email', flex: 1 },
+        { text: 'First Name',  dataIndex: 'firstName', flex: 1 },
+        { text: 'Last Name', dataIndex: 'lastName', flex: 1 },
         { text: 'Age', dataIndex: 'age', flex: 1 }
     ],
 
     listeners: {
-        select: 'onItemSelected'
+        //select: 'onItemSelected'
     }
 });

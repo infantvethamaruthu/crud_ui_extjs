@@ -521,9 +521,9 @@
                     "src": "classic/sass/save"
                 }
             }
-        },
-
-        "modern": {
+        }
+        
+        /*"modern": {
             "toolkit": "modern",
             "theme": "theme-material",
             "sass": {
@@ -532,7 +532,7 @@
                     "src": "modern/sass/save"
                 }
             }
-        }
+        }*/
     },
 
     /**
