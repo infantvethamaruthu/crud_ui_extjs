@@ -1,9 +1,6 @@
-/**
- * This view is an example list of people.
- */
-Ext.define('CrudUI.view.main.List', {
+Ext.define('CrudUI.view.person.PersonListView', {
     extend: 'Ext.grid.Panel',
-    xtype: 'mainlist',
+    xtype: 'personList',
 
     requires: [
         'CrudUI.store.Person'
@@ -15,6 +12,16 @@ Ext.define('CrudUI.view.main.List', {
         type: 'Person'
     },
 
+     tbar: [
+        {
+            xtype: 'button',
+            itemId: 'createPersonBtn',
+            text: 'Create New Person',
+            listeners: {
+                click: 'onClickCreateNewPatient'
+            }
+        }
+     ], 
     columns: [
         { text: 'First Name',  dataIndex: 'name' },
         { text: 'Last Name', dataIndex: 'email', flex: 1 },

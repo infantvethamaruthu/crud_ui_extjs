@@ -15,7 +15,7 @@ Ext.define('CrudUI.view.main.Main', {
 
         'CrudUI.view.main.MainController',
         'CrudUI.view.main.MainModel',
-        'CrudUI.view.main.List'
+        'CrudUI.view.person.PersonListView'
     ],
 
     controller: 'main',
@@ -83,7 +83,7 @@ Ext.define('CrudUI.view.main.Main', {
         title: 'Users',
         iconCls: 'fa-user',
         items: [{
-            xtype: 'mainlist'
+            xtype: 'personList'
         }]
     }]
 });
