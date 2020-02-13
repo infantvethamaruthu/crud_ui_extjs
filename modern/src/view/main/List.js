@@ -6,13 +6,13 @@ Ext.define('CrudUI.view.main.List', {
     xtype: 'mainlist',
 
     requires: [
-        'CrudUI.store.Personnel'
+        'CrudUI.store.Person'
     ],
 
-    title: 'Personnel',
+    title: 'Person',
 
     store: {
-        type: 'personnel'
+        type: 'Person'
     },
 
     columns: [{ 

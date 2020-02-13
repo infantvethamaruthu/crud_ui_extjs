@@ -1,9 +1,9 @@
-Ext.define('CrudUI.store.Personnel', {
+Ext.define('CrudUI.store.Person', {
     extend: 'Ext.data.Store',
 
-    alias: 'store.personnel',
+    alias: 'store.Person',
 
-    model: 'CrudUI.model.Personnel',
+    model: 'CrudUI.model.Person',
 
     data: { items: [
         { name: 'Jean Luc', email: "jeanluc.picard@enterprise.com", phone: "555-111-1111" },

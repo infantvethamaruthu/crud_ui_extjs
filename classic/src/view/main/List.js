@@ -6,19 +6,19 @@ Ext.define('CrudUI.view.main.List', {
     xtype: 'mainlist',
 
     requires: [
-        'CrudUI.store.Personnel'
+        'CrudUI.store.Person'
     ],
 
-    title: 'Personnel',
+    title: 'Person',
 
     store: {
-        type: 'personnel'
+        type: 'Person'
     },
 
     columns: [
-        { text: 'Name',  dataIndex: 'name' },
-        { text: 'Email', dataIndex: 'email', flex: 1 },
-        { text: 'Phone', dataIndex: 'phone', flex: 1 }
+        { text: 'First Name',  dataIndex: 'name' },
+        { text: 'Last Name', dataIndex: 'email', flex: 1 },
+        { text: 'Age', dataIndex: 'age', flex: 1 }
     ],
 
     listeners: {

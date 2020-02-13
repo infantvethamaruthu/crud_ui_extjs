@@ -7,10 +7,6 @@ Ext.define('CrudUI.view.main.MainModel', {
     alias: 'viewmodel.main',
 
     data: {
-        name: 'CrudUI',
-
-        loremIpsum: 'Awesome !!! Welcome to the new ext js Application.!'
+        name: 'CrudUI'
     }
-
-    //TODO - add data, formulas and/or methods to support your view
 });

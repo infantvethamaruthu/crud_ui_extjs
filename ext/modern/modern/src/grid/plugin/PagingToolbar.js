@@ -16,7 +16,7 @@
  *     });
  *
  *     Ext.create('Ext.grid.Grid', {
- *         title: 'DC Personnel',
+ *         title: 'DC Person',
  *
  *         store: store,
  *         plugins: {
