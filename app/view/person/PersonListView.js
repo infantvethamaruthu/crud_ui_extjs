@@ -27,7 +27,7 @@ Ext.define('CrudUI.view.person.PersonListView', {
             itemId: 'createPersonBtn',
             text: 'Create New Person',
             listeners: {
-                //click: 'onClickCreateNewPatient'
+                click: 'onClickCreateNewPerson'
             }
         }
      ], 
@@ -37,7 +37,7 @@ Ext.define('CrudUI.view.person.PersonListView', {
         { text: 'Age', dataIndex: 'age', flex: 1 }
     ],
 
-    listeners: {
-        //select: 'onItemSelected'
-    }
+     listeners: {
+                cellclick: 'onEditPatient', 
+       }
 });
