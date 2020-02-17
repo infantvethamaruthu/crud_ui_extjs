@@ -25,3 +25,9 @@
 0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:13:27 +0530] "GET /CrudUI/classic/resources/CrudUI-all_2.css?_dc=20200217130259 HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:13:27 +0530] "GET /CrudUI/classic/app.js?_dc=20200217130259 HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:13:27 +0530] "GET /CrudUI/classic.json?_dc=1581925407821 HTTP/1.1" 200 2295
+0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:56:18 +0530] "GET /CrudUI/cache.appcache HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:56:18 +0530] "GET /CrudUI/classic/resources/CrudUI-all_1.css?_dc=20200217130259 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:56:18 +0530] "GET /CrudUI/classic/resources/CrudUI-all_2.css?_dc=20200217130259 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:56:18 +0530] "GET /CrudUI/classic/app.js?_dc=20200217130259 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:56:19 +0530] "GET /CrudUI/classic.json?_dc=1581927979210 HTTP/1.1" 200 2295
+0:0:0:0:0:0:0:1 - - [17/Feb/2020:13:56:39 +0530] "GET /CrudUI/classic/resources/font-ext/fonts/ExtJS.ttf?-tqegh9 HTTP/1.1" 200 10404

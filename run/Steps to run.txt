@@ -4,6 +4,8 @@ Navigate to \crud_ui_extjs\run\apache-tomcat-9.0.24\bin directory .
 Run start.bat and start apache tomcat.
 Launch  CrudUI with http://localhost:8083/CrudUI
 
+UI build is availabe in \crud_ui\build\production.
+
 Steps to run Spring boot server app:
 ------------------------------------
 Navigate to Navigate to \crud_ui_extjs\run\
