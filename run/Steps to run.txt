@@ -1,0 +1,13 @@
+Steps to run the UI Application:
+---------------------------------
+Navigate to \crud_ui_extjs\run\apache-tomcat-9.0.24\bin directory .
+Run start.bat and start apache tomcat.
+Launch  CrudUI with http://localhost:8083/CrudUI
+
+Steps to run Spring boot server app:
+------------------------------------
+Navigate to Navigate to \crud_ui_extjs\run\
+Open terminal and enter "java -jar crudapplication-0.0.1-SNAPSHOT"
+Access rest services with localhost:8080
+
+Note: Cross origin is allowed for 8083 port from rest services. So changing the port of apache tomcat would cause cors issue.

@@ -16,28 +16,43 @@ Ext.define('CrudUI.view.person.PersonListView', {
         type: 'person-list-view-model'
     },
 
-    bind: '{personStore}',
-    // store:{
-    //     type: 'personStore'
-    // },
-
-     tbar: [
+    bind: '{personListStore}',
+    tbar: [
         {
             xtype: 'button',
             itemId: 'createPersonBtn',
             text: 'Create New Person',
+            cls: 'background-color: lightgrey',
             listeners: {
                 click: 'onClickCreateNewPerson'
             }
         }
-     ], 
-    columns: [
-        { text: 'First Name',  dataIndex: 'firstName', flex: 1 },
-        { text: 'Last Name', dataIndex: 'lastName', flex: 1 },
-        { text: 'Age', dataIndex: 'age', flex: 1 }
     ],
-
-     listeners: {
-                cellclick: 'onEditPatient', 
-       }
+    columns: [
+        { text: 'First Name', dataIndex: 'firstName', flex: 1 },
+        { text: 'Last Name', dataIndex: 'lastName', flex: 1 },
+        { text: 'Age', dataIndex: 'age', flex: 1 },
+        {
+            xtype: 'actioncolumn',
+            align: 'center',
+            items: [
+                {
+                    iconCls: 'x-fa fa-edit',
+                    tooltip: 'Edit',
+                    handler: 'onEditPerson'
+                }
+            ]
+        },
+        {
+            xtype: 'actioncolumn',
+            align: 'center',
+            items: [
+                {
+                    iconCls: 'x-fa fa-trash',
+                    tooltip: 'Delete',
+                    handler: 'onDeletePerson'
+                }
+            ]
+        }
+    ]
 });

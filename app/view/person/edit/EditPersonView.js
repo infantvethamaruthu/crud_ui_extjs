@@ -15,8 +15,6 @@ Ext.define('CrudUI.view.person.edit.EditPersonView', {
     },
 
     width: 400,
-    height: 475,
-    minHeight: 475,
     buttonAlign: 'center',
     modal: true,
     draggable: false,
@@ -39,9 +37,6 @@ Ext.define('CrudUI.view.person.edit.EditPersonView', {
                             bind: '{firstName}',
                             allowOnlyWhitespace: false,
                             maxLength: 50,
-                            //cls: "patientConfig0",
-                            //fieldCls: "patientConfig0input",
-                            //labelClsExtra: "patientConfig0label"
                         },
                         {
                             itemId: 'lNameField',
@@ -64,18 +59,17 @@ Ext.define('CrudUI.view.person.edit.EditPersonView', {
                 {
                     text: 'Save',
                     disabled: true,
-                    formBind: true
-                    //listeners: {
-                    // click: 'onClickSave'
-                    //},
-                    //cls: "addEditPatSaveBtn"
+                    formBind: true,
+                    listeners: {
+                    click: 'onClickSave'
+                    }
                 },
                 {
                     text: 'Cancel',
-                    //listeners: {
+                    listeners: {
                     // closeView is a helper inherited from Ext.app.ViewController
-                    //click: 'closeView'
-                    //}
+                    click: 'closeView'
+                    }
                 }
             ]
         }
